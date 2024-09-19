@@ -17,7 +17,7 @@ import Oaza from '/src/assets/Project/OAZA.jpg';
 import Pizza from '/src/assets/Project/PIZZA.jpg';
 import Schedule from '/src/assets/Project/SCHEDULE.jpg';
 import Smart from '/src/assets/Project/SMART.jpg';
-import Safkiar from '/src/assets/Project/Safkiar.jpg';
+import Safkiar from '/src/assets/Project/SAFKIAR.jpg';
 import Kikowski from '/src/assets/Project/KIKOWSKI.jpg'; 
 
 

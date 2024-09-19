@@ -24,8 +24,6 @@ export const SlideContainer = styled.div`
     @media (max-height: 400px) {
     width: 40%;
   }
-
-
     
   } 
 
@@ -49,11 +47,11 @@ export const SlideImage = styled.div`
   }
 
   @media (max-height: 650px) {
-    height: ${({ $flexOn }) => ($flexOn ? '170px' : '250px')};
+    height: ${({ $flexOn }) => ($flexOn ? '160px' : '250px')};
   }
 
   @media (max-height: 600px) {
-    height: ${({ $flexOn }) => ($flexOn ? '160px' : '230px')};
+    height: ${({ $flexOn }) => ($flexOn ? '150px' : '230px')};
   }
   @media (max-height: 550px) {
     height: ${({ $flexOn }) => ($flexOn ? '130px' : '210px')};

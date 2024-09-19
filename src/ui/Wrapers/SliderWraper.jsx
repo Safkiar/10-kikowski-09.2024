@@ -5,10 +5,17 @@ const StyledDiv = styled.div`
 height: 100%;
 display: flex;
 flex-direction: column;
+@media (min-height: 800px)  {
+  gap: 10px;}
+@media (min-height: 650px) and (max-width: 450px) {
+  gap: 1px;}
+@media (min-height: 670px) and (max-width: 450px) {
+  gap: 4.9px;}
+  @media (min-height: 750px) and (max-width: 450px) {
+    gap: 8px;}
 
-@media (min-height: 600px) and (max-width: 450px) {
-  gap: 40px;
-}
+
+
 `;
 
 

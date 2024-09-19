@@ -11,7 +11,7 @@ const StyledDiv = styled.div`
   flex-direction: column;
   align-items:center;
   img {
-    width: 200px;
+    width: 220px;
 
 
   }

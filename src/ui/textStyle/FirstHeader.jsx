@@ -14,7 +14,7 @@ export const StyledHeaderTwo = styled.h2`
   @media (max-width: 350px) {
     font-size: 1.2rem;
   }
-  @media (max-height: 650px) {
+  @media (max-height: 680px) {
     font-size: 1.4rem;
     padding-top: 1.2rem;
     margin-bottom: 1rem;

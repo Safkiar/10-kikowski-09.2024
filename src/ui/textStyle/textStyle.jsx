@@ -32,18 +32,22 @@ text-align: center;
 font-size: 0.85rem;
 margin: 0 3px;
     }
+    @media (max-height: 680px) {
+        font-size: 0.8rem;
+}
 
     @media (max-height: 600px) {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
 }
     @media (max-height: 500px) {
         font-size: 0.77rem;
 }
 
 @media (min-height: 600px) and (max-width: 450px) {
-  font-size:1rem;}
+  font-size:0.87rem;}
+@media (min-height: 670px) and (max-width: 450px) {
+  font-size:0.92rem;}
 `;
-
 export const ProjectDate = styled.p`
 display: flex;
 width: 80%;

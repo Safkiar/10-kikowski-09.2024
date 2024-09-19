@@ -76,7 +76,7 @@ const TechChart = () => {
       setChartHeight(350);
       setChartMargin((prevMargin) => ({ ...prevMargin, left: 50 }));
     } else {
-      setChartHeight(420);
+      setChartHeight(430);
       setChartMargin((prevMargin) => ({ ...prevMargin, left: 60 }));
     }
 

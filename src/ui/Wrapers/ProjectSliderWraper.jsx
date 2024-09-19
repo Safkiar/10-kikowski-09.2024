@@ -6,10 +6,13 @@ const StyledDiv = styled.div`
 height: 100%;
 display: flex;
 flex-direction: column;
-
-
+@media (min-height: 800px)  {
+  gap: 20px;}
 @media (min-height: 600px) and (max-width: 450px) {
-gap: 15px;}
+  gap: 10px;}
+@media (min-height: 670px) and (max-width: 450px) {
+  gap: 15px;}
+
 `;
 
 

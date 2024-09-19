@@ -15,10 +15,10 @@ import Forkify from '/src/assets/Project/FORKIFY.jpg';
 import Mix from '/src/assets/Project/MIX.jpg';
 import Oaza from '/src/assets/Project/OAZA.jpg';
 import Pizza from '/src/assets/Project/PIZZA.jpg';
-import Schedule from '/src/assets/Project/SCHEDULE.BMP';
-import Smart from '/src/assets/Project/SMART.bmp';
-import Safkiar from '/src/assets/Project/Safkiar.bmp';
-import Kikowski from '/src/assets/Project/KIKOWSKI.bmp'; 
+import Schedule from '/src/assets/Project/SCHEDULE.jpg';
+import Smart from '/src/assets/Project/SMART.jpg';
+import Safkiar from '/src/assets/Project/Safkiar.jpg';
+import Kikowski from '/src/assets/Project/KIKOWSKI.jpg'; 
 
 
 export const frontendCourses = [CSS, JavaScript, ReactImg, TS];

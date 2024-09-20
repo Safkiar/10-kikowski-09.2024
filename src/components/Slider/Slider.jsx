@@ -7,8 +7,9 @@ import { Dot, DotContainer } from "../../ui/slides/CustomDots";
 import { SlideContainer, SlideImage } from "../../ui/slides/SlideWrapper";
 import { ButtonWrapper, StyledButton } from "../../ui/slides/ButtonWrapper";
 import ProjectSliderWraper from "../../ui/Wrapers/ProjectSliderWraper";
-import ErrorMessage from "../../ui/error";
+import ErrorMessage from "../../ui/Error";
 import Spinner from "../../ui/Spinner";
+
 
 
 export default function Slider() {

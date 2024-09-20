@@ -64,9 +64,6 @@ a {
   text-decoration: inherit;
   text-shadow: 3px 1px 4px #1f292e; 
 }
-a:hover {
-  color: #3f9fd2;
-}
 
 body {
   margin: 0;

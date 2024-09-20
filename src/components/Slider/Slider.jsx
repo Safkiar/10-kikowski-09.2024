@@ -7,28 +7,38 @@ import { Dot, DotContainer } from "../../ui/slides/CustomDots";
 import { SlideContainer, SlideImage } from "../../ui/slides/SlideWrapper";
 import { ButtonWrapper, StyledButton } from "../../ui/slides/ButtonWrapper";
 import ProjectSliderWraper from "../../ui/Wrapers/ProjectSliderWraper";
+import ErrorMessage from "../../ui/error";
+import Spinner from "../../ui/Spinner";
+
 
 export default function Slider() {
   const [slideImages, setSlideImages] = useState(frontendCourses); 
   const [loading, setLoading] = useState(true); 
+  const [error, setError] = useState(null); 
   const [currentSlide, setCurrentSlide] = useState(0); 
   const slideRef = useRef(); 
   const [activeCategory, setActiveCategory] = useState('frontend');
 
   useEffect(() => {
     setLoading(true);
-
+    setError(null); 
     const loadImages = () => {
       const promises = slideImages.map((src) => {
-        return new Promise((resolve) => {
+        return new Promise((resolve, reject) => {
           const img = new Image();
           img.src = src;
           img.onload = resolve;
-          img.onerror = resolve;
+          img.onerror = () => reject(new Error(`Failed to load image ${src}`));
         });
       });
 
-      Promise.all(promises).then(() => setLoading(false));
+      Promise.all(promises)
+        .then(() => setLoading(false))
+        .catch((err) => {
+          console.error(err);
+          setError('Failed to load images');
+          setLoading(false);
+        });
     };
 
     loadImages();
@@ -59,11 +69,17 @@ export default function Slider() {
     slideRef.current.goTo(index); 
   };
 
+  if (loading) {
+    return <Spinner />;
+  }
 
+  if (error) {
+    return <ErrorMessage error={error} />;
+  }
 
   return (
-    <ProjectSliderWraper >
-   <ButtonWrapper>
+    <ProjectSliderWraper>
+      <ButtonWrapper>
         <StyledButton
           onClick={() => handleCategoryChange('frontend')}
           $active={activeCategory === 'frontend'} 
@@ -84,44 +100,40 @@ export default function Slider() {
         </StyledButton>
       </ButtonWrapper>
 
-      {loading ? (
-        <div >Loading...</div>
-      ) : (
-        <>
-          <Slide
-            easing="ease"
-            duration={3000}
-            prevArrow={
-              <CustomPrevArrow onClick={handlePrevSlide}>
-                <button>&lt;</button>
-              </CustomPrevArrow>
-            }
-            nextArrow={
-              <CustomNextArrow onClick={handleNextSlide}>
-                <button>&gt;</button>
-              </CustomNextArrow>
-            }
-            ref={slideRef} 
-            onChange={(oldIndex, newIndex) => setCurrentSlide(newIndex)} 
-          >
-            {slideImages.map((slide, index) => (
-           <SlideContainer key={index}>
-           <SlideImage style={{ backgroundImage: `url(${slide})` }} />
-         </SlideContainer>
-            ))}
-          </Slide>
+      <>
+        <Slide
+          easing="ease"
+          duration={3000}
+          prevArrow={
+            <CustomPrevArrow onClick={handlePrevSlide}>
+              <button>&lt;</button>
+            </CustomPrevArrow>
+          }
+          nextArrow={
+            <CustomNextArrow onClick={handleNextSlide}>
+              <button>&gt;</button>
+            </CustomNextArrow>
+          }
+          ref={slideRef} 
+          onChange={(oldIndex, newIndex) => setCurrentSlide(newIndex)} 
+        >
+          {slideImages.map((slide, index) => (
+            <SlideContainer key={index}>
+              <SlideImage style={{ backgroundImage: `url(${slide})` }} />
+            </SlideContainer>
+          ))}
+        </Slide>
 
-          <DotContainer>
-        {slideImages.map((_, index) => (
-          <Dot
-            key={index}
-            $active={index === currentSlide}
-            onClick={() => handleDotClick(index)}
-          />
-        ))}
-      </DotContainer>
-        </>
-      )}
+        <DotContainer>
+          {slideImages.map((_, index) => (
+            <Dot
+              key={index}
+              $active={index === currentSlide}
+              onClick={() => handleDotClick(index)}
+            />
+          ))}
+        </DotContainer>
+      </>
     </ProjectSliderWraper>
   );
 }

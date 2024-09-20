@@ -8,6 +8,7 @@ import Dyplom from '/src/assets/Courses/Dyplom.jpg';
 import Github from '/src/assets/Courses/Github.jpg';
 import Marketing from '/src/assets/Courses/Marketing.jpg';
 import Microsoft from '/src/assets/Courses/Microsoft.png';
+import SQL from '/src/assets/Courses/SQL.jpg'
 
 import Chess from '/src/assets/Project/CHESS.jpg';
 import Daily from '/src/assets/Project/DAILY.jpg';
@@ -22,8 +23,8 @@ import Kikowski from '/src/assets/Project/KIKOWSKI.jpg';
 
 
 export const frontendCourses = [CSS, JavaScript, ReactImg, TS];
-export const backendCourses = [Node, Python];
-export const generalCourses = [Dyplom, Github, Marketing, Microsoft];
+export const backendCourses = [Node,SQL];
+export const generalCourses = [Dyplom, Github, Python, Marketing, Microsoft];
 
 
 export const projectImages = {

@@ -70,7 +70,7 @@ export const SlideImage = styled.div`
 
 
   &:hover {
-    background-color: ${({ $flexOn }) => $flexOn ? 'rgba(0, 0, 0, 0.152)' : 'initial'};
+    /* background-color: ${({ $flexOn }) => $flexOn ? 'rgba(0, 0, 0, 0.152)' : 'initial'}; */
     background-blend-mode: ${({ $flexOn }) => $flexOn ? 'multiply' : 'initial'};
   }
 `;

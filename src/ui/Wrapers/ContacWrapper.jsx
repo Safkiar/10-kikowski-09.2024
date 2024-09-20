@@ -5,7 +5,6 @@ import { BsTelephone } from "react-icons/bs";
 import Curtain from "../animations/Curtain";
 import { FaFileDownload } from "react-icons/fa";
 
-
 const StyledDiv = styled.div`
 height: 100%;
 `;
@@ -124,13 +123,13 @@ const ContactWrapper = ({ children}) => {
 
         <Styledh2>Download CV</Styledh2>
         <SvgButton>
-        <a href="path/to/your/file/en-version.pdf" download>
+        <a href="/KIKOWSKI-ENGLISH-CV.pdf" download>
         <FaFileDownload />
         English
       </a>
         </SvgButton>
         <SvgButton>
-        <a href="path/to/your/file/en-version.pdf" download>
+        <a href="/KIKOWSKI-POLISH-CV.pdf" download>
         <FaFileDownload />
         Polish
       </a>
@@ -141,13 +140,13 @@ const ContactWrapper = ({ children}) => {
 <PdfWrapper>
 <Styledh2>View CV</Styledh2>
 <SvgButton>
-  <a href="path/to/your/file/en-version.pdf" download>
+<a href="/KIKOWSKI-ENGLISH-CV.pdf" target="_blank" rel="noopener noreferrer">
   <FaFileDownload />
   English
   </a>
 </SvgButton>
 <SvgButton>
-  <a href="path/to/your/file/pl-version.pdf" target="_blank" rel="noopener noreferrer">
+  <a href="/KIKOWSKI-POLISH-CV.pdf" target="_blank" rel="noopener noreferrer">
   <FaFileDownload />
     Polish
   </a>

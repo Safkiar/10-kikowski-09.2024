@@ -8,7 +8,7 @@ import { Dot, DotContainer } from "../../ui/slides/CustomDots";
 import { FirstLi, ProjectDate, ProjectDescription, ProjectHeading, SecondLi, ThirdLi, WraperOfStyles } from "../../ui/textStyle/textStyle";
 import SliderWraper from "../../ui/Wrapers/SliderWraper";
 import { HiOutlineCalendarDays } from "react-icons/hi2";
-import ErrorMessage from "../../ui/error";
+import ErrorMessage from "../../ui/Error";
 import Spinner from "../../ui/Spinner";
 
 

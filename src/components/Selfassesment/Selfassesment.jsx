@@ -264,7 +264,7 @@ const Selfassesment = () => {
       </OneLiner>
       {/*  */}
 <OneLiner>
-        <StyledP>Moongose</StyledP>
+        <StyledP>MongoDB</StyledP>
         <StarContainer>
           <FaStar className="gradient-star" />
           <FaStar className="gradient-star" />

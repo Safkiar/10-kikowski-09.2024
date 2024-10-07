@@ -9,6 +9,8 @@ import Github from '/src/assets/Courses/Github.jpg';
 import Marketing from '/src/assets/Courses/Marketing.jpg';
 import Microsoft from '/src/assets/Courses/Microsoft.png';
 import SQL from '/src/assets/Courses/SQL.jpg'
+import RFULL from '/src/assets/Courses/RFULL.jpg'
+import TS2 from '/src/assets/Courses/TS2.jpg'
 
 import Chess from '/src/assets/Project/CHESS.jpg';
 import Daily from '/src/assets/Project/DAILY.jpg';
@@ -22,9 +24,10 @@ import Safkiar from '/src/assets/Project/SAFKIAR.jpg';
 import Kikowski from '/src/assets/Project/KIKOWSKI.jpg'; 
 
 
-export const frontendCourses = [CSS, JavaScript, ReactImg, TS];
+export const frontendCourses = [CSS, JavaScript, ReactImg, TS,TS2];
 export const backendCourses = [Node,SQL];
 export const generalCourses = [Dyplom, Github, Python, Marketing, Microsoft];
+export const fullstackCourses = [RFULL]
 
 
 export const projectImages = {

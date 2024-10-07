@@ -12,9 +12,14 @@ export const ButtonWrapper = styled.div`
     gap: 15px;
     margin: 10px;
   }
+  
+  @media (max-height: 550px) {
+  gap: 9px;
+}
 
   @media (max-height: 450px) {
   gap: 8px;
+  margin: 10 5px;
 }
 
 `;

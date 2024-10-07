@@ -1,6 +1,6 @@
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
-import { frontendCourses, backendCourses, generalCourses } from "../../path/images";
+import { frontendCourses, backendCourses, generalCourses, fullstackCourses } from "../../path/images";
 import { useState, useEffect, useRef } from "react";
 import { CustomPrevArrow, CustomNextArrow } from '../../ui/slides/CustomArrows';
 import { Dot, DotContainer } from "../../ui/slides/CustomDots";
@@ -60,6 +60,8 @@ export default function Slider() {
       setSlideImages(frontendCourses);
     } else if (category === "backend") {
       setSlideImages(backendCourses);
+    } else if (category === "fullstack") {
+      setSlideImages(fullstackCourses);
     } else {
       setSlideImages(generalCourses);
     }
@@ -92,6 +94,12 @@ export default function Slider() {
           $active={activeCategory === 'backend'} 
         >
           Backend
+        </StyledButton>
+        <StyledButton
+          onClick={() => handleCategoryChange('fullstack')}
+          $active={activeCategory === 'fullstack'} 
+        >
+          Fullstack
         </StyledButton>
         <StyledButton
           onClick={() => handleCategoryChange('general')}

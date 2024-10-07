@@ -159,7 +159,7 @@ const Selfassesment = () => {
           <FaStar className="gradient-star" />
           <FaStar className="gradient-star" />
           <FaStar className="gradient-star" />
-          <FaStar className="black-star" />
+          <FaStar className="gradient-star" />
           <FaStar className="black-star" /> 
           <FaStar className="black-star" />
         </StarContainer>
@@ -189,7 +189,7 @@ const Selfassesment = () => {
           <FaStar className="gradient-star" />
           <FaStar className="gradient-star" />
           <FaStar className="gradient-star" />
-          <FaStar className="black-star" />
+          <FaStar className="gradient-star" />
           <FaStar className="black-star" />
           <FaStar className="black-star" />
           <FaStar className="black-star" /> 
@@ -268,7 +268,7 @@ const Selfassesment = () => {
         <StarContainer>
           <FaStar className="gradient-star" />
           <FaStar className="gradient-star" />
-          <FaStar className="black-star" />
+          <FaStar className="gradient-star" />
           <FaStar className="black-star" />
           <FaStar className="black-star" />
           <FaStar className="black-star" />

@@ -16,7 +16,6 @@ function App() {
       <ComponentView>
           <Introduction/>
         </ComponentView>
-
         <ComponentView>
           <ProjectSlide />
         </ComponentView>

@@ -12,11 +12,12 @@ const StyledDiv = styled.div`
   align-items:center;
   img {
     width: 220px;
+    border-radius: 50%;
 
 
   }
-  footer {
-    text-align: right;
+  p {
+    text-align: center;
   }
   button {
     margin: 0 auto;
@@ -116,26 +117,10 @@ const Styledh4 = styled.h4`
 `;
 
 const Quoter = styled.blockquote`
-    margin-top: 3rem;
     width: 80%;
     @media (min-width: 568px) {
     width: 400px;
   }
-    @media (max-height: 650px) {
-      margin-top: 1.4rem;
-    }
-    @media (max-height: 600px) {
-      margin-top: 0.9rem;
-    }
-    @media (max-height: 550px) {
-      margin-top: 0.7rem;
-    }
-    @media (max-height: 500px) {
-      margin-top: 0.5rem;
-    }
-    @media (max-height: 450px) {
-      margin-top: 0.3rem;
-    }
     
 `
 
@@ -147,6 +132,8 @@ const Introduction = () => {
     const handleScrollDown = () => {
       scrollToNextSection();
     };
+
+ 
   
 
     return (<StyledDiv>
@@ -155,13 +142,14 @@ const Introduction = () => {
          <img src={JaImage} alt="Michał Kikowski"/>
          <Styledh2>Fullstack Developer</Styledh2>
          <Quoter>
-         <cite> The impediment to action advances action. What stands in the way becomes the way.</cite>
+         <p> Dedicated and proactive developer, consistently improving skills through daily coding and hands-on experience, with a focus on problem-solving and efficient solutions </p>
        
-        <footer>— Marcus Aurelius</footer>
+
      
       </Quoter>
       <Styledh4>Explore portfolio</Styledh4>
       <button onClick={handleScrollDown}> <FaArrowDown /> </button>
+
             </StyledDiv>);
   };
   

@@ -1,9 +1,50 @@
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 import JaImage from '../../assets/Ja.jpg'
 import { FaArrowDown } from "react-icons/fa";
 import { useContext } from "react";
 import { ScrollContext } from "../../utility/SmoothScroll";
 
+const moveInRight = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+  80% {
+    transform: translateX(-5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+`;
+
+const moveInLeft = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+  80% {
+    transform: translateX(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+`;
+
+const moveInUp = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  80% {
+    transform: translateY(-5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+`;
 
 const StyledDiv = styled.div`
   height: 100%;
@@ -13,7 +54,7 @@ const StyledDiv = styled.div`
   img {
     width: 220px;
     border-radius: 50%;
-
+    animation: ${moveInLeft} 1s ease-out;
 
   }
   p {
@@ -21,6 +62,7 @@ const StyledDiv = styled.div`
   }
   button {
     margin: 0 auto;
+    animation: ${moveInUp} 1s ease-out;
     background: linear-gradient(
         rgba(12, 27, 58, 0.7),
         #3f9fd2
@@ -61,6 +103,7 @@ const Styledh1 = styled.h1`
   padding-top: 2rem;
   margin-bottom: 1rem;
   font-size: 2.2rem;
+  animation: ${moveInLeft} 1s ease-out;
   @media (max-height: 600px) {
       padding-top: 0.9rem;
       margin-bottom: 0.8rem;
@@ -88,6 +131,7 @@ const Styledh2 = styled.h2`
   text-align: center;
   padding-top: 2rem;
   margin-bottom: 1rem;
+  animation: ${moveInRight} 1s ease-out;
   @media (max-height: 600px) {
     padding-top: 0.9rem;
     margin-bottom: 0.8rem;
@@ -111,6 +155,7 @@ const Styledh4 = styled.h4`
   text-align: center;
   padding-top: 2rem;
   margin-bottom: 0.5rem;
+  animation: ${moveInUp} 1s ease-out;
   @media (max-height: 550px) {
     padding-top: 0.5rem;
     }
@@ -118,6 +163,7 @@ const Styledh4 = styled.h4`
 
 const Quoter = styled.blockquote`
     width: 80%;
+    animation: ${moveInRight} 1s ease-out;
     @media (min-width: 568px) {
     width: 400px;
   }

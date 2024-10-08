@@ -7,6 +7,7 @@ import { FaFileDownload } from "react-icons/fa";
 
 const StyledDiv = styled.div`
 height: 100%;
+
 `;
 
 const Styledh1 = styled.h1`

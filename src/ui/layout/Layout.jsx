@@ -10,15 +10,18 @@ const BodyLayout = styled.div`
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   will-change: transform;
+  width: auto;
 `;
 
 const Skeleton = styled.div`
-  width: 86vw;
+  /* max-width: 86vw; */
   margin: 0 auto;
   height: 100%;
+  min-width: 330px;
+  /* max-width: 90vw; */
 
   @media (max-width: 768px) {
-    width: 98vw;
+    width: 95vw;
   }
 `;
 

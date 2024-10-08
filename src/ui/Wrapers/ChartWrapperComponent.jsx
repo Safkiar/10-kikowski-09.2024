@@ -7,6 +7,7 @@ height: 100%;
 display: flex;
 flex-direction:column;
 
+
 @media (min-height: 600px) and (max-width: 450px) {
   gap: 3rem;
 }

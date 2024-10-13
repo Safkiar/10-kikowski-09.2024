@@ -23,7 +23,7 @@ import Pizza from '/src/assets/Project/PIZZA.jpg';
 import Schedule from '/src/assets/Project/SCHEDULE.jpg';
 import Smart from '/src/assets/Project/SMART.jpg';
 import Safkiar from '/src/assets/Project/SAFKIAR.jpg';
-import Card from '/src/assets/Project/Card.jpg'
+import Card from '/src/assets/Project/CARD.jpg'
 import Kikowski from '/src/assets/Project/KIKOWSKI.jpg';
 
 

@@ -23,7 +23,9 @@ import Pizza from '/src/assets/Project/PIZZA.jpg';
 import Schedule from '/src/assets/Project/SCHEDULE.jpg';
 import Smart from '/src/assets/Project/SMART.jpg';
 import Safkiar from '/src/assets/Project/SAFKIAR.jpg';
-import Kikowski from '/src/assets/Project/KIKOWSKI.jpg'; 
+import Card from '/src/assets/Project/Card.jpg'
+import Kikowski from '/src/assets/Project/KIKOWSKI.jpg';
+
 
 
 export const frontendCourses = [CSS, JavaScript,JSADV, ReactImg, TS,TS2];
@@ -33,6 +35,18 @@ export const fullstackCourses = [RFULL]
 
 
 export const projectImages = {
+  Card: {
+    dataCreated: "October 2024",  
+    description: "This app uses Webpack with advanced SCSS animations and Pug templates. It updates the card preview dynamically as the user types, including smooth flip animations when interacting with fields like the CVV. The setup provides a responsive, interactive experience for entering card details", 
+    technologyUsed: {
+      frontEnd: ['JavaScript', 'PUG'],  
+      backend: ['Webpack'],
+      styles: ['SCSS']
+    },
+    title: "Animated Card",  
+    image: Card,
+    path: "https://safkiar-animated-card.netlify.app/"
+  },
     Smart: {
       dataCreated: "September 2024",  
       description: "The Search Tool is a React-Redux-based feature designed to help users filter and retrieve data efficiently from a table of user information. The tool provides dynamic filtering, performance optimizations, and seamless user interactions, making data retrieval both fast and flexible.", 

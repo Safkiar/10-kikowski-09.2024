@@ -9,7 +9,7 @@ export const SlideContainer = styled.div`
 
 
   a {
-    display: block; 
+    display: inline-block; 
     width: 72%;
     @media (max-width: 568px) {
       width: 82%;
@@ -24,7 +24,7 @@ export const SlideContainer = styled.div`
     @media (max-height: 400px) {
     width: 40%;
   }
-    
+  
   } 
 
 
@@ -32,10 +32,20 @@ export const SlideContainer = styled.div`
 
 
 export const SlideImage = styled.div`
-  background-size: contain;
+
+  background-size:  ${({ $flexOn }) => $flexOn ? 'cover' : 'contain'};;
   background-position: center;
   background-repeat: no-repeat;
   height: ${({ $flexOn }) => ($flexOn ? '180px' : '300px')};
+  transition: transform 0.7s ease, box-shadow 0.7s ease;
+
+  &:hover {
+    
+      box-shadow: ${({ $flexOn }) => $flexOn ? '0px -8px 100px rgba(31, 142, 206, 0.552)' : ''};
+      transform: ${({ $flexOn }) => $flexOn ? 'scale(1.02);' : ''};
+      
+    }
+
 
 
   @media (min-width: 568px) {

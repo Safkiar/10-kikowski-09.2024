@@ -6,6 +6,7 @@ export const ButtonWrapper = styled.div`
   margin: 20px 0;
   gap: 30px; 
   margin-bottom: 2rem;
+ 
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -51,6 +52,7 @@ export const StyledButton = styled.button`
   outline-offset: 0px;
   text-shadow: ${(props) => (props.$active ? `3px 1px 4px #1f292e` : 'none')};
   transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+
   @media (max-height: 550px) {
     padding: 4px 30px;
     font-size: 14px;

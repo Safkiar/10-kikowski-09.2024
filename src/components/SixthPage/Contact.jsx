@@ -1,5 +1,5 @@
 
-import ContactWrapper from "../../ui/Wrapers/ContacWrapper";
+import ContactWrapper from "./ui/ContacWrapper"
 
 const Contact = () => {
   return (<>

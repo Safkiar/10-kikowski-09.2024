@@ -1,12 +1,12 @@
-import Slider from './components/Slider/Slider';
-import ProjectSlide from './components/Project/ProjectSlide';
-import TechChart from './components/TechChart/TechChart';
-import Layout from './ui/layout/Layout';
-import ComponentView from './ui/layout/ComponentView';
+import Slider from './components/FifthPage/Slider';
+import ProjectSlide from './components/SecondPage/ProjectSlide';
+import TechChart from './components/ThirdPage/TechChart';
+import Layout from './layout/Layout';
+import ComponentView from './layout/ComponentView';
 import SmoothScroll from './utility/SmoothScroll';
-import Contact from './components/Contact/Contact';
-import Introduction from './components/Introduction/Introduction';
-import Selfassesment from './components/Selfassesment/Selfassesment';
+import Contact from './components/SixthPage/Contact';
+import Introduction from './components/FirstPage/Introduction';
+import Selfassesment from './components/FourtPage/Selfassesment';
 
 
 function App() {

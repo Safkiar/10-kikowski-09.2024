@@ -2,7 +2,7 @@ import styled from "styled-components";
 import PropTypes from 'prop-types';
 import { LuMail } from "react-icons/lu";
 import { BsTelephone } from "react-icons/bs";
-import Curtain from "../animations/Curtain";
+import Curtain from "./Curtain";
 import { FaFileDownload } from "react-icons/fa";
 
 const StyledDiv = styled.div`
@@ -68,7 +68,11 @@ background: linear-gradient(
         #3f9fd2
         );
 margin-bottom: 1.5rem;
-  text-shadow: 2px 2px 20px black;
+text-shadow: 2px 2px 20px black;
+
+  &:hover {
+    filter: brightness(90%);
+  }
   a {
     display: flex;
     width: 100%;

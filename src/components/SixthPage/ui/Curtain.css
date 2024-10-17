@@ -31,7 +31,7 @@
     text-decoration: none;
     position: relative;
     display: inline-block;
-    overflow: hidden;
+    /* overflow: hidden; */
     
   }
   
@@ -40,10 +40,12 @@
     color: #000000;
     z-index: 1;
     position: relative;
+    transition: all 0.2s ease;
+    transform: translateY(0px);
   }
 
   .curtain li:hover a .icon {
-    color: #3f3333;
+    /* color: #3f3333; */
     z-index: 1;
     position: relative;
   }
@@ -52,12 +54,15 @@
   
   .curtain li:nth-child(1):hover a .icon{
     color: #ffffff;
+    transform: scale(1.1) translateY(-2px);
   }
   .curtain li:nth-child(2):hover a .icon{
     color: #1da1f2;
+    transform: scale(1.1) translateY(-2px);
   }
   .curtain li:nth-child(3):hover a .icon{
-    color: #cf320f;
+    color: #ee0909e8;
+    transform: scale(1.1) translateY(-2px);
   }
 
 

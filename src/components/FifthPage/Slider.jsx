@@ -2,14 +2,14 @@ import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import { frontendCourses, backendCourses, generalCourses, fullstackCourses } from "../../path/images";
 import { useState, useEffect, useRef } from "react";
-import { CustomPrevArrow, CustomNextArrow } from '../../ui/slides/CustomArrows';
-import { Dot, DotContainer } from "../../ui/slides/CustomDots";
-import { SlideContainer, SlideImage } from "../../ui/slides/SlideWrapper";
-import { ButtonWrapper, StyledButton } from "../../ui/slides/ButtonWrapper";
-import ProjectSliderWraper from "../../ui/Wrapers/ProjectSliderWraper";
-import ErrorMessage from "../../ui/Error";
-import Spinner from "../../ui/Spinner";
-
+import Spinner from "../CommonUiComponents/Spinner";
+import { CustomNextArrow, CustomPrevArrow } from "../CommonUiComponents/CustomArrows";
+import ErrorMessage from "../CommonUiComponents/Error";
+import ProjectSliderWraper from "./ui/ProjectSliderWraper"
+import {ButtonWrapper, StyledButton } from "./ui/ButtonWrapper";
+import {SlideContainer} from "../SecondPage/ui/SlideContainer";
+import {Dot, DotContainer} from "../CommonUiComponents/CustomDots";
+import { SlideImage } from "../SecondPage/ui/SlideContainer";
 
 
 export default function Slider() {
@@ -112,7 +112,8 @@ export default function Slider() {
       <>
         <Slide
           easing="ease"
-          duration={3000}
+          duration={slideImages.length > 1 ? 3000 : 0} 
+          autoplay={slideImages.length > 1}           
           prevArrow={
             <CustomPrevArrow onClick={handlePrevSlide}>
               <button>&lt;</button>

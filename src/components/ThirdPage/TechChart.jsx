@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { BarChart, Bar, XAxis, YAxis, Tooltip } from 'recharts';
 import { projectImages } from '../../path/images';
 import styled from 'styled-components';
-import ChartWrapperComponent from '../../ui/Wrapers/ChartWrapperComponent';
+import ChartWrapperComponent from './ui/ChartWrapperComponent';
 
 const countTechnologies = (projects) => {
   const techCounts = {

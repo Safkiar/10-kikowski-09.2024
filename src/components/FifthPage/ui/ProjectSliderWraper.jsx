@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import PropTypes from 'prop-types';
-import {StyledHeaderTwo} from '../textStyle/FirstHeader'
+import {StyledHeaderTwo} from '../../CommonUiComponents/FirstHeader'
 
 const StyledDiv = styled.div`
 height: 100%;

@@ -2,14 +2,14 @@ import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import { projectImages } from "../../path/images";
 import { useState, useRef, useEffect } from "react";
-import { CustomPrevArrow, CustomNextArrow } from '../../ui/slides/CustomArrows';
-import { SlideContainer, SlideImage } from "../../ui/slides/SlideWrapper";
-import { Dot, DotContainer } from "../../ui/slides/CustomDots";
-import { FirstLi, ProjectDate, ProjectDescription, ProjectHeading, SecondLi, ThirdLi, WraperOfStyles } from "../../ui/textStyle/textStyle";
-import SliderWraper from "../../ui/Wrapers/SliderWraper";
+import { CustomPrevArrow, CustomNextArrow } from '../CommonUiComponents/CustomArrows';
+import { SlideContainer, SlideImage } from "./ui/SlideContainer";
+import { Dot, DotContainer } from "../CommonUiComponents/CustomDots";
+import { FirstLi, ProjectDate, ProjectDescription, ProjectHeading, SecondLi, ThirdLi, WraperOfStyles } from "../CommonUiComponents/textStyle";
+import SliderWraper from "./ui/SliderWraper";
 import { HiOutlineCalendarDays } from "react-icons/hi2";
-import ErrorMessage from "../../ui/Error";
-import Spinner from "../../ui/Spinner";
+import ErrorMessage from "../CommonUiComponents/Error";
+import Spinner from "../CommonUiComponents/Spinner";
 
 
 export default function Slider() {

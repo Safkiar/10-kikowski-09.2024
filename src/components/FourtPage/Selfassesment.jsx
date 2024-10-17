@@ -1,6 +1,6 @@
 import { FaStar } from "react-icons/fa";
 import styled from "styled-components";
-import { StyledHeaderTwo } from "../../ui/textStyle/FirstHeader";
+import { StyledHeaderTwo } from "../CommonUiComponents/FirstHeader";
 
 const StyledDiv = styled.div`
   height: 100%;
@@ -68,6 +68,7 @@ const StarContainer = styled.div`
   .gradient-star {
     font-size: 1.8rem;
     filter: drop-shadow(0px 3px 10px #1e45c494);
+
     fill: url(#gradient); 
     @media (max-height: 550px) {
       font-size: 1.4rem;
@@ -104,7 +105,7 @@ filter: drop-shadow(0px 3px 12px #000208);
 const ShadowHr = styled.hr`
 border: 1px solid #36363616;
   height: 1px;
-  box-shadow: 0px 1px 8px rgba(252, 250, 250, 0.6); 
+  box-shadow: 0px 1px 8px rgba(252, 250, 250, 0.3); 
   margin: 20px 0; 
   @media (max-height: 550px) {
       margin: 12px 0;
@@ -175,7 +176,7 @@ const Selfassesment = () => {
           <FaStar className="gradient-star" />
           <FaStar className="gradient-star" />
           <FaStar className="gradient-star" />
-          <FaStar className="black-star" />
+          <FaStar className="gradient-star" />
           <FaStar className="black-star" /> 
           <FaStar className="black-star" />
         </StarContainer>

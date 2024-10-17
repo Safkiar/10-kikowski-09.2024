@@ -6,12 +6,15 @@ export const CustomPrevArrow = styled.div`
   justify-content: center;
   margin-left: 0.7rem;
   cursor: pointer;
+  border-radius: 20%;
+  box-shadow: 0 2px 5px #d6d4d453;
   button {
+    background-color: #ffffff28;
     background: linear-gradient(
-        rgba(13, 40, 94, 0.459),
-        #2c78a142
+        rgba(13, 40, 94, 0.822),
+        #2c78a1dc
         );
-    border-radius: 20%;
+ 
     border: none;
     font-size:  ${({ $flexOn }) => ($flexOn ? '13px' : '18px')};
     cursor: pointer;
@@ -19,11 +22,12 @@ export const CustomPrevArrow = styled.div`
   }
   button:focus {
     outline: none;
+    border: 1px solid rgba(82, 100, 138, 0.459);
   }
 
   @media (max-width: 768px) {
     position: absolute;
-    top: ${({ $flexOn }) => ($flexOn ? '15%' : '102%')};
+    top: ${({ $flexOn }) => ($flexOn ? '55%' : '102%')};
   }
   @media (max-height: 550px) {
   button {
@@ -38,14 +42,16 @@ export const CustomNextArrow = styled.div`
   align-items: center;
   justify-content: center;
   margin-right: 0.7rem;
+  border-radius: 20%;
+  box-shadow: 0 2px 5px #d6d4d453;
   cursor: pointer;
   button {
     background-color: #ffffff28;
     background: linear-gradient(
-        rgba(13, 40, 94, 0.459),
-        #2c78a142
+        rgba(13, 40, 94, 0.822),
+        #2c78a1dc
         );
-    border-radius: 20%;
+ 
     border: none;
     font-size:  ${({ $flexOn }) => ($flexOn ? '13px' : '18px')};
     cursor: pointer;
@@ -53,10 +59,11 @@ export const CustomNextArrow = styled.div`
   }
   button:focus {
     outline: none;
+    border: 1px solid rgba(82, 100, 138, 0.459);
   }
   @media (max-width: 768px) {
     position: absolute;
-    top: ${({ $flexOn }) => ($flexOn ? '15%' : '102%')};
+    top: ${({ $flexOn }) => ($flexOn ? '55%' : '102%')};
   }
 
   @media (max-height: 550px) {

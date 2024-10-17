@@ -13,6 +13,7 @@ import RFULL from '/src/assets/Courses/RFULL.jpg'
 import TS2 from '/src/assets/Courses/TS2.jpg'
 import WP from '/src/assets/Courses/WP.jpg'
 import JSADV from '/src/assets/Courses/JSADV.jpg'
+import CSSADV from '/src/assets/Courses/CSSADV.jpg'
 
 import Chess from '/src/assets/Project/CHESS.jpg';
 import Daily from '/src/assets/Project/DAILY.jpg';
@@ -28,7 +29,7 @@ import Kikowski from '/src/assets/Project/KIKOWSKI.jpg';
 
 
 
-export const frontendCourses = [CSS, JavaScript,JSADV, ReactImg, TS,TS2];
+export const frontendCourses = [CSS,CSSADV, JavaScript,JSADV, ReactImg, TS,TS2];
 export const backendCourses = [Node,SQL];
 export const generalCourses = [Dyplom, Github, WP, Python, Marketing, Microsoft];
 export const fullstackCourses = [RFULL]

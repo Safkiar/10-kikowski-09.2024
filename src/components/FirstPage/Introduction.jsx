@@ -1,17 +1,10 @@
 import JaImage from '../../assets/Ja.jpg';
-import { FaArrowDown } from 'react-icons/fa';
-import { useContext, useEffect, useState } from 'react';
-import { ScrollContext } from '../../utility/SmoothScroll';
+import { useEffect, useState } from 'react';
 import Spinner from '../CommonUiComponents/Spinner';
-import { Quoter, StyledDiv, Styledh1, Styledh2, Styledh4 } from './ui/styles';
+import { Quoter, StyledDiv, Styledh1, Styledh2 } from './ui/styles';
 
 const Introduction = () => {
-  const { scrollToNextSection } = useContext(ScrollContext);
   const [isImageLoading, setIsImageLoading] = useState(true);
-
-  const handleScrollDown = () => {
-    scrollToNextSection();
-  };
 
   useEffect(() => {
     const img = new Image();
@@ -40,10 +33,10 @@ const Introduction = () => {
               problem-solving and efficient solutions
             </p>
           </Quoter>
-          <Styledh4>Explore portfolio</Styledh4>
-          <button onClick={handleScrollDown}>
+          {/* <Styledh4>Explore portfolio</Styledh4> */}
+          {/* <button onClick={handleScrollDown}>
             <FaArrowDown />
-          </button>
+          </button> */}
         </>
       )}
     </StyledDiv>

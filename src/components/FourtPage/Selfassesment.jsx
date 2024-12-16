@@ -98,12 +98,12 @@ const ShadowHr = styled.hr`
   border: 1px solid #36363616;
   height: 1px;
   box-shadow: 0px 1px 8px rgba(252, 250, 250, 0.3);
-  margin: 20px 0;
+  margin: 10px 0;
   @media (max-height: 550px) {
-    margin: 12px 0;
+    margin: 6px 0;
   }
   @media (max-height: 450px) {
-    margin: 10px auto;
+    margin: 4px auto;
     width: 50%;
   }
 `;
@@ -195,8 +195,8 @@ const Selfassesment = () => {
           <FaStar className="gradient-star" />
           <FaStar className="gradient-star" />
           <FaStar className="gradient-star" />
-          <FaStar className="black-star" />
-          <FaStar className="black-star" />
+          <FaStar className="gradient-star" />
+          <FaStar className="gradient-star" />
           <FaStar className="black-star" />
           <FaStar className="black-star" />
         </StarContainer>
@@ -221,6 +221,36 @@ const Selfassesment = () => {
       <ShadowHr></ShadowHr>
       {/*  */}
       <OneLiner>
+        <StyledP>SQL</StyledP>
+        <StarContainer>
+          <FaStar className="gradient-star" />
+          <FaStar className="gradient-star" />
+          <FaStar className="gradient-star" />
+          <FaStar className="gradient-star" />
+          <FaStar className="gradient-star" />
+          <FaStar className="gradient-star" />
+          <FaStar className="gradient-star" />
+          <FaStar className="black-star" />
+          <FaStar className="black-star" />
+          <FaStar className="black-star" />
+        </StarContainer>
+      </OneLiner>
+      <OneLiner>
+        <StyledP>Spring</StyledP>
+        <StarContainer>
+          <FaStar className="gradient-star" />
+          <FaStar className="gradient-star" />
+          <FaStar className="gradient-star" />
+          <FaStar className="gradient-star" />
+          <FaStar className="gradient-star" />
+          <FaStar className="gradient-star" />
+          <FaStar className="gradient-star" />
+          <FaStar className="black-star" />
+          <FaStar className="black-star" />
+          <FaStar className="black-star" />
+        </StarContainer>
+      </OneLiner>
+      <OneLiner>
         <StyledP>NodeJS</StyledP>
         <StarContainer>
           <FaStar className="gradient-star" />
@@ -236,21 +266,7 @@ const Selfassesment = () => {
         </StarContainer>
       </OneLiner>
       {/*  */}
-      <OneLiner>
-        <StyledP>SQL</StyledP>
-        <StarContainer>
-          <FaStar className="gradient-star" />
-          <FaStar className="gradient-star" />
-          <FaStar className="gradient-star" />
-          <FaStar className="gradient-star" />
-          <FaStar className="gradient-star" />
-          <FaStar className="black-star" />
-          <FaStar className="black-star" />
-          <FaStar className="black-star" />
-          <FaStar className="black-star" />
-          <FaStar className="black-star" />
-        </StarContainer>
-      </OneLiner>
+
       {/*  */}
       <OneLiner>
         <StyledP>MongoDB</StyledP>

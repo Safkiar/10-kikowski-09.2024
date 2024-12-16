@@ -15,6 +15,9 @@ import WP from '/src/assets/Courses/WP.jpg';
 import JSADV from '/src/assets/Courses/JSADV.jpg';
 import CSSADV from '/src/assets/Courses/CSSADV.jpg';
 import ANG from '/src/assets/Courses/ANG.jpg';
+import SPRING from '/src/assets/Courses/SPRING.jpg';
+import SPRING2 from '/src/assets/Courses/SPRING2.jpg';
+import MYSQL from '/src/assets/Courses/MYSQL.jpg';
 
 import Chess from '/src/assets/Project/CHESS.jpg';
 import Daily from '/src/assets/Project/DAILY.jpg';
@@ -28,6 +31,7 @@ import Safkiar from '/src/assets/Project/SAFKIAR.jpg';
 import Card from '/src/assets/Project/CARD.jpg';
 import Kikowski from '/src/assets/Project/KIKOWSKI.jpg';
 import Bet from '/src/assets/Project/BET.jpg';
+import Safizoo from '/src/assets/Project/SAFIZOO.png';
 
 export const frontendCourses = [
   CSS,
@@ -39,7 +43,8 @@ export const frontendCourses = [
   TS2,
   ANG,
 ];
-export const backendCourses = [Node, SQL];
+
+export const backendCourses = [Node, SQL, SPRING, SPRING2, MYSQL];
 export const generalCourses = [
   Dyplom,
   Github,
@@ -51,6 +56,19 @@ export const generalCourses = [
 export const fullstackCourses = [RFULL];
 
 export const projectImages = {
+  Safizoo: {
+    dataCreated: 'December 2024',
+    description:
+      'fullstack e-commerce app where users can browse products, view details, and place orders. The application uses Angular SSR (Server-Side Rendering) for enhanced performance and SEO optimization on the frontend, while Spring Boot serves as the backend API connected to a MySQL database. Each part of the system is hosted individually and communicates seamlessly.',
+    technologyUsed: {
+      frontEnd: ['Angular', 'TypeScript'],
+      backend: ['Spring', 'MySQL'],
+      styles: ['SCSS'],
+    },
+    title: 'Safizoo',
+    image: Safizoo,
+    path: 'https://one-safizoo-fullstack-angular-spring.onrender.com',
+  },
   Betang: {
     dataCreated: 'November 2024',
     description:

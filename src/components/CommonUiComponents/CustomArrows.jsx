@@ -10,13 +10,10 @@ export const CustomPrevArrow = styled.div`
   box-shadow: 0 2px 5px #d6d4d453;
   button {
     background-color: #ffffff28;
-    background: linear-gradient(
-        rgba(13, 40, 94, 0.822),
-        #2c78a1dc
-        );
- 
+    background: linear-gradient(rgba(13, 40, 94, 0.822), #2c78a1dc);
+
     border: none;
-    font-size:  ${({ $flexOn }) => ($flexOn ? '13px' : '18px')};
+    font-size: ${({ $flexOn }) => ($flexOn ? '13px' : '18px')};
     cursor: pointer;
     text-shadow: 2px 2px 2px rgba(247, 247, 248, 0.226);
   }
@@ -27,14 +24,13 @@ export const CustomPrevArrow = styled.div`
 
   @media (max-width: 768px) {
     position: absolute;
-    top: ${({ $flexOn }) => ($flexOn ? '55%' : '102%')};
+    top: ${({ $flexOn }) => ($flexOn ? '55%' : '62%')};
   }
   @media (max-height: 550px) {
-  button {
-
-    font-size:  ${({ $flexOn }) => ($flexOn ? '12px' : '15px')};
+    button {
+      font-size: ${({ $flexOn }) => ($flexOn ? '12px' : '15px')};
+    }
   }
-}
 `;
 
 export const CustomNextArrow = styled.div`
@@ -47,13 +43,10 @@ export const CustomNextArrow = styled.div`
   cursor: pointer;
   button {
     background-color: #ffffff28;
-    background: linear-gradient(
-        rgba(13, 40, 94, 0.822),
-        #2c78a1dc
-        );
- 
+    background: linear-gradient(rgba(13, 40, 94, 0.822), #2c78a1dc);
+
     border: none;
-    font-size:  ${({ $flexOn }) => ($flexOn ? '13px' : '18px')};
+    font-size: ${({ $flexOn }) => ($flexOn ? '13px' : '18px')};
     cursor: pointer;
     text-shadow: 2px 2px 2px rgba(247, 247, 248, 0.226);
   }
@@ -63,13 +56,12 @@ export const CustomNextArrow = styled.div`
   }
   @media (max-width: 768px) {
     position: absolute;
-    top: ${({ $flexOn }) => ($flexOn ? '55%' : '102%')};
+    top: ${({ $flexOn }) => ($flexOn ? '55%' : '62%')};
   }
 
   @media (max-height: 550px) {
-  button {
-
-    font-size:  ${({ $flexOn }) => ($flexOn ? '12px' : '15px')};
+    button {
+      font-size: ${({ $flexOn }) => ($flexOn ? '12px' : '15px')};
+    }
   }
-}
 `;
